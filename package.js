@@ -17,10 +17,10 @@ Package.onUse = Package.onUse || Package.on_use // backwards-compat
 Package.onTest = Package.onTest || Package.on_test // backwards-compat
 
 Package.onUse(function (api) {
-  api.addFiles = api.addFiles || api.add_files // backwards-compat
-
-  if (api.versionsFrom) { // 0.9.3+ litmus test
-    api.versionsFrom(['0.9.3', '2.3'])
+  api.addFiles = api.addFiles || api.add_files;     // backwards-compat
+  
+  if (api.versionsFrom) {
+    api.versionsFrom('2.3');
 
     api.use([
       'ecmascript',
