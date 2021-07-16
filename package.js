@@ -1,4 +1,4 @@
-var VERSION_NUMBER = '0.2.1_1';
+var VERSION_NUMBER = '0.3.0';
 
 Package.describe({
   name: 'lai:collection-extensions',
@@ -18,8 +18,8 @@ Package.onTest = Package.onTest || Package.on_test; // backwards-compat
 Package.onUse(function (api) {
   api.addFiles = api.addFiles || api.add_files;     // backwards-compat
   
-  if (api.versionsFrom) { // 0.9.3+ litmus test
-    api.versionsFrom('0.9.3');
+  if (api.versionsFrom) {
+    api.versionsFrom('2.3');
 
     api.use([
       'mongo',
